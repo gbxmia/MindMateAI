@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MindMate AI | Mood Tracker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libertinus+Keyboard&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+       <header class="site-header">
+    <h1 class="site-title courgette-regular">MindMate AI</h1>
+    <nav class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="product.html" class="nav-link">Product</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="features.html" class="nav-link">Features</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="community.html" class="nav-link">Community</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-center narrow">
+    <h1 class="page-title courgette-regular" style="color:var(--brand)">Mood Tracker</h1>
+    <p> Check in with yourself, your feelings matter </p>
+
+    <div class="card">
+      <form id="moodForm" class="mood-form">
+        <label for="mood">Select your mood</label>
+        <select id="mood">
+          <option value="Very Happy">Very Happy</option>
+          <option value="Happy">Happy</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Sad">Sad</option>
+          <option value="Very Sad">Very Sad</option>
+        </select>
+
+        <label for="time">Time (Auto or Choose)</label>
+        <input type="datetime-local" id="time">
+
+        <button type="submit" class="btn">Log Mood</button>
+      </form>
+    </div>
+
+    <section class="card" id="moodList">
+      <h3>Your Entries (Weekly Tracking)</h3>
+      <ul id="entries"></ul>
+      <button id="clearMoods" class="btn small">Clear All</button>
+    </section>
+  </main>
+
+<footer>
+  <div class="content">
+      <p>Need our help? Email us at <a href="mindmateai@gmail.com">mindmateai@gmail.com</a></p>    <ul class="sm">
+    </ul>
+  </div>
+</br>
+  <p class="copyright">
+    &copy; <span id="year"></span> MindMateAI | All Rights Reserved
+  </p>
+</footer>
+
+</body>
+</html>
